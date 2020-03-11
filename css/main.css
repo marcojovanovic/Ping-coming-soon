@@ -613,6 +613,12 @@ table th {
   }
 }
 
+@media only screen and (max-width: 27.25em) {
+  .main-form {
+    width: 100%;
+  }
+}
+
 .main-btn {
   width: 14%;
   border-radius: 40px;
@@ -685,9 +691,9 @@ table th {
 
 @media only screen and (max-width: 27.25em) {
   .main-img {
-    width: 80%;
+    width: 100%;
     margin-top: 20rem;
-    margin-bottom: 40rem;
+    margin-bottom: 33rem;
   }
 }
 
@@ -731,11 +737,13 @@ i:hover {
   color: white;
 }
 
-::-webkit-input-placeholder, ::-webkit-input-placeholder {
+::-webkit-input-placeholder,
+::-webkit-input-placeholder {
   color: #969696;
 }
 
-::placeholder, ::-webkit-input-placeholder {
+::placeholder,
+::-webkit-input-placeholder {
   color: #969696;
 }
 

@@ -1,18 +1,18 @@
-.main{
+.main {
 
   text-align: center;
   vertical-align: middle;
 
-  &-logo{
-     max-width: 10rem;
-     text-align: center;
-     margin: auto;
-     margin-top: 7rem;
-     margin-bottom: 4rem;
+  &-logo {
+    max-width: 10rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
   }
 
-  &-title{
-    color:$gray;
+  &-title {
+    color: $gray;
     font-weight: 400;
     letter-spacing: 0.1rem;
     margin-bottom: 1rem;
@@ -20,60 +20,66 @@
     font-size: 4rem;
 
 
-    @media only screen and(max-width:$bp-smallest){
+    @media only screen and(max-width:$bp-smallest) {
       font-size: 3rem;
-      
+
     }
   }
 
 
-  &-form{
-   
-   
+  &-form {
+
+
     display: flex;
     margin: auto;
     position: relative;
 
-    @media only screen and(max-width:$bp-medium){
+    @media only screen and(max-width:$bp-medium) {
 
       flex-direction: column;
-    
+
       width: 50%;
-      
+
     }
-    @media only screen and(max-width:$bp-small){
-     margin-bottom: 0;
-      
+
+    @media only screen and(max-width:$bp-small) {
+      margin-bottom: 0;
+
     }
-     
-   
+    @media only screen and(max-width:$bp-smallest) {
+      width: 100%;
+
+    }
+
+
   }
 
-  &-btn{
+  &-btn {
 
     width: 14%;
     border-radius: 40px;
     background: $blue;
-    margin-left: 2rem; 
+    margin-left: 2rem;
 
-    @media only screen and(max-width:$bp-medium){
+    @media only screen and(max-width:$bp-medium) {
       width: 100%;
       display: block;
       margin-left: 0;
       margin-top: 2rem;
-      
+
     }
-   
-   
+    
+
+
   }
 
-  &-btn:hover{
+  &-btn:hover {
     opacity: 0.8;
   }
 
 
-  &-input{
-  
+  &-input {
+
     width: 27% !important;
     outline: none;
     border: none;
@@ -84,110 +90,116 @@
     border: 1px solid #ccc;
 
 
-    @media only screen and(max-width:$bp-medium){
+    @media only screen and(max-width:$bp-medium) {
       display: block;
       width: 100% !important;
       margin-left: 0;
-      
+
     }
+    
   }
 
-  &-img{
+  &-img {
     width: 50%;
     margin: auto;
     margin-top: 4rem;
     margin-bottom: 4rem;
 
 
-    @media only screen and(max-width:$bp-large){
-    
+    @media only screen and(max-width:$bp-large) {
+
       width: 60%;
       margin-top: 10rem;
       margin-bottom: 10rem;
     }
-    @media only screen and(max-width:$bp-medium){
-    
+
+    @media only screen and(max-width:$bp-medium) {
+
       width: 80%;
       margin-top: 10rem;
       margin-bottom: 13rem;
     }
-    @media only screen and(max-width:$bp-small){
-    
+
+    @media only screen and(max-width:$bp-small) {
+
       width: 90%;
       margin-top: 13rem;
       margin-bottom: 20rem;
     }
-    @media only screen and(max-width:$bp-smallest){
-    
-      width: 80%;
+
+    @media only screen and(max-width:$bp-smallest) {
+
+      width: 100%;
       margin-top: 20rem;
-      margin-bottom: 40rem;
+      margin-bottom: 33rem;
     }
   }
 
-  &-text{
+  &-text {
     font-size: 2.2rem;
     margin-bottom: 6rem;
 
-    @media only screen and(max-width:$bp-smallest){
+    @media only screen and(max-width:$bp-smallest) {
       font-size: 1.5rem;
       margin-bottom: 10rem;
-      
+
     }
   }
 }
 
-span{
-  color:#333;
-  font-weight: bold;;
+span {
+  color: #333;
+  font-weight: bold;
+  ;
 }
 
-i{
-  color:$blue;
-  border:1px solid $gray;
+i {
+  color: $blue;
+  border: 1px solid $gray;
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 3rem;
   margin-left: 1rem;
 }
 
-i:nth-of-type(1){
+i:nth-of-type(1) {
   padding: 1rem 1.5rem;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
-i:hover{
+i:hover {
   cursor: pointer;
   background: $blue;
-  color:white;
+  color: white;
 }
 
-::placeholder, ::-webkit-input-placeholder{
-  color:$gray;
+::placeholder,
+::-webkit-input-placeholder {
+  color: $gray;
 }
 
-.error-msg{
+.error-msg {
   text-align: left !important;
 
   font-size: 1.2rem;
-  color:$lightRed;
+  color: $lightRed;
   position: absolute;
-  top:55px;
-  left:32%;
+  top: 55px;
+  left: 32%;
 
 
-  @media only screen and(max-width:$bp-medium){
-   position: unset;
-  
-    
+  @media only screen and(max-width:$bp-medium) {
+    position: unset;
+
+
   }
- 
+
 }
 
-.error-border{
+.error-border {
 
   border: 1px solid $lightRed;
 }
