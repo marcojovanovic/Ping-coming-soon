@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" />
+  <title>Ping Landing Page</title>
+</head>
+
+<body>
+
+  <div class='container'>
+    <main class='main'>
+      <img src='img/logo.svg' alt='' class='main-logo' />
+      <h1 class='main-title'>We are launching <span>soon!</span></h1>
+      <p class='main-text'>Subscribe and get notifed</p>
+      <form id='form'>
+        <div class='main-form'>
+          <input type='text' class='main-input' id='input' placeholder="Your email adress ..." />
+          <small class='error-msg hide'>Please provide valid email adress</small>
+          <button class='btn main-btn' id='button' type='submit'>Notify Me</button>
+        </div>
+
+      </form>
+      <img src='/img/illustration-dashboard.png' class='main-img' alt='' />
+      <div class='social'>
+        <i class='fab fa-facebook-f'></i>
+        <i class='fab fa-twitter'></i>
+        <i class='fab fa-instagram'></i>
+        <p class='main-copyright'>Copyright Ping. All rights reserved</p>
+      </div>
+    </main>
+
+  </div>
+
+  <script>
+    const form = document.querySelector('#form');
+    const input = document.querySelector('#input');
+    const errorMsg = document.querySelector('.error-msg');
+    let regexEmail =
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/g
+
+    form.addEventListener('submit', (e) => {
+
+      e.preventDefault()
+
+
+      if (!input.value.match(regexEmail) || input.value === '') {
+
+        input.classList.add('error-border')
+        errorMsg.classList.remove('hide')
+        input.value = ''
+      }
+
+    })
+  </script>
+</body>
+
+</html>
